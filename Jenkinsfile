@@ -30,11 +30,11 @@ pipeline {
             }
         }
 
-        stage('Verify Docker') {
-            steps {
-                bat 'docker --version'
-            }
-        }
+       stage('Verify Docker') {
+    steps {
+        bat '"%LOCALAPPDATA%\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" --version'
+    }
+}
     }
 
     post {
